@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>seisuu_toka</name>
+    </assembly>
+    <members>
+        <member name="T:seisuu_toka.seisuu_toka">
+            <summary>
+            整数系を処理するライブラリです。
+            いろいろ返ってくる物は、基本Listのlongで受け取ってください。
+            </summary>
+        </member>
+        <member name="M:seisuu_toka.seisuu_toka.yakusuu(System.Int64)">
+            <summary>
+            約数を求めるメソッドです。
+            </summary>
+            <param name="l_yakusuu">何の約数か</param>
+            <returns>選択した約数</returns>
+        </member>
+        <member name="M:seisuu_toka.seisuu_toka.baisuu(System.Int64,System.Int64)">
+            <summary>
+            倍数を求めるメソッドです。
+            </summary>
+            <param name="baisuu">何の倍数か</param>
+            <param name="kaisuu">何回出すか（無限だから）</param>
+            <returns>選択した倍数</returns>
+        </member>
+        <member name="M:seisuu_toka.seisuu_toka.seisuu(System.String)">
+            <summary>
+            整数かどうかを判断するメソッドです。
+            少数は引っかかるので、注意してください。
+            </summary>
+            <param name="str">判断する文字列</param>
+            <returns>数字だったらtrue,数字でなければ、false</returns>
+        </member>
+        <member name="M:seisuu_toka.seisuu_toka.saisyoukoubaisuu(System.Int64,System.Int64)">
+            <summary>
+            最小公倍数を求めるメソッドです。
+            </summary>
+            <param name="a_baisuu">倍数①</param>
+            <param name="b_baisuu">倍数②</param>
+            <returns>long値の最小公倍数</returns>
+        </member>
+        <member name="M:seisuu_toka.seisuu_toka.koubaisuu(System.Int64,System.Int64,System.Int64)">
+            <summary>
+            公倍数を求めるメソッドです。
+            </summary>
+            <param name="a_baisuu">倍数①</param>
+            <param name="b_baisuu">倍数②</param>
+            <param name="kaisuu">回数</param>
+            <returns>公倍数</returns>
+        </member>
+        <member name="M:seisuu_toka.seisuu_toka.kouyakusuu(System.Int64,System.Int64)">
+            <summary>
+            公約数を求めるメソッドです。
+            </summary>
+            <param name="a_yakusuu">約数①</param>
+            <param name="b_yakusuu">約数②</param>
+            <returns>公約数</returns>
+        </member>
+        <member name="M:seisuu_toka.seisuu_toka.saidaikouyakusuu(System.Int64,System.Int64)">
+            <summary>
+            最大公約数を求めるメソッドです。
+            </summary>
+            <param name="a_yakusuu">約数①</param>
+            <param name="b_yakusuu">約数②</param>
+            <returns>long値の最大公約数</returns>
+        </member>
+        <member name="M:seisuu_toka.seisuu_toka.kantan_hi(System.Int64,System.Int64)">
+            <summary>
+            比を簡単にするメソッドです。
+            </summary>
+            <param name="a_hi">比の値①</param>
+            <param name="b_hi">比の値②</param>
+            <returns>returnの[0]が簡単な比①、returnの[1]が簡単な比②です。</returns>
+        </member>
+        <member name="M:seisuu_toka.seisuu_toka.kantan_bunnsuu(System.Int64,System.Int64)">
+            <summary>
+            分数を簡単にするメソッドです。
+            </summary>
+            <param name="bunbo">分母の値</param>
+            <param name="bunsi">分子の値</param>
+            <returns>returnの[0]が簡単な分母、returnの[1]が簡単な分子。</returns>
+        </member>
+    </members>
+</doc>
